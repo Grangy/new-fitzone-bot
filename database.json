@@ -1,0 +1,43 @@
+{
+    "FIT-ZONE": {
+      "Мира 1А": {
+        "Зал №1": {
+          "Понедельник": ["Hatha Yoga", "Kundalini Yoga", "Functional", "Stretching", "Pilates", "Ecstatic Dance", "Cycle", "Body Sculpt", "Power Step", "TAE-BO"],
+          "Вторник": ["Kundalini Yoga", "Callanetics", "ABL", "Pilates + Balance", "Pilates", "Healthy Back", "Stretching", "Cycle", "Body Sculpt", "Pump"],
+          "Среда": ["Hatha Yoga", "Callanetics", "Pilates + Balance", "Pilates", "Oriental Dance", "Stretching", "TRX", "Circular Training", "Pilates", "TAE-BO"],
+          "Четверг": ["Hatha Yoga", "Callanetics", "Pilates + Balance", "Total Body", "Healthy Back", "Stretching", "Shaping", "TRX", "Monster Training", "Basic Step"],
+          "Пятница": ["Hatha Yoga", "Cycle", "Pilates", "Total Body", "Stretching", "TRX", "Body Sculpt"],
+          "Суббота": ["Hatha Yoga", "Cycle", "Pilates", "Total Body", "Stretching"],
+          "Воскресенье": ["Hatha Yoga", "Cycle", "Pilates", "Total Body", "Stretching"]
+        },
+        "Зал №2 (Функциональный тренинг)": {
+          "Понедельник": ["Суставная гимнастика", "Functional", "Гимнастика + МФР", "Stretch + Шпагат", "Lady Dance"],
+          "Вторник": ["Суставная гимнастика", "Functional", "Callanetics", "Fitness Twerk", "Lady Dance"],
+          "Среда": ["Суставная гимнастика", "Functional", "Gliding", "Stretch + Шпагат", "Lady Dance"],
+          "Четверг": ["Суставная гимнастика", "Functional", "Callanetics", "Stretching + МФР", "Восток"],
+          "Пятница": ["Суставная гимнастика", "Functional", "Callanetics", "Stretching + МФР", "Lady Dance"],
+          "Суббота": ["Functional", "Stretching + МФР"],
+          "Воскресенье": ["Functional", "Stretching + МФР"]
+        }
+      },
+      "Пионерская 2Г": {
+        "Зал групповых программ": {
+          "Понедельник": ["Hatha Yoga", "Суставная гимнастика", "Full Body", "Stretching", "Женское здоровье", "Pilates", "TAE-BO", "TRX", "Йога в гамаках", "Total Body", "Body Sculpt", "Yoga Intensiv"],
+          "Вторник": ["Hatha Yoga", "Суставная гимнастика", "Full Body", "Stretching", "Zumba", "Женское здоровье", "Pilates", "TRX", "Йога в гамаках", "Total Body", "Body Sculpt", "Yoga Intensiv"],
+          "Среда": ["Hatha Yoga", "Суставная гимнастика", "Total Body", "Stretching + МФР", "TAE-BO", "Йога в гамаках", "Functional", "ABL", "Body Sculpt", "Yoga Intensiv"],
+          "Четверг": ["Hatha Yoga", "Суставная гимнастика", "Stretching + МФР", "TRX", "TABATA", "Total Body", "Восток MIX", "Stretching + МФР", "Yoga Intensiv"],
+          "Пятница": ["Hatha Yoga", "Йога в гамаках", "Суставная гимнастика", "Functional", "PUMP", "Full Body", "Stretching + МФР"],
+          "Суббота": ["Hatha Yoga", "Йога в гамаках", "Fit Rock", "Pilates", "Stretching + МФР", "TAE-BO", "TRX"],
+          "Воскресенье": ["Hatha Yoga", "Йога в гамаках", "Functional", "Stretching + МФР"]
+        },
+        "Зона единоборств": {
+          "Понедельник": ["Детский бокс", "Бокс"],
+          "Вторник": ["Детский бокс", "Бокс", "Кикбоксинг"],
+          "Среда": ["Детский бокс", "Бокс"],
+          "Четверг": ["Детский бокс", "Бокс", "Кикбоксинг"],
+          "Пятница": ["Детский бокс", "Бокс"]
+        }
+      }
+    }
+  }
+  
