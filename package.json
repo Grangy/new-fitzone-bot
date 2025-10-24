@@ -10,8 +10,11 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
     "prisma:deploy": "prisma migrate deploy",
+    "prisma:reset": "prisma migrate reset --force",
     "import:workouts": "tsx src/scripts/import-workouts.ts",
-    "deploy": "npm run build && npm run prisma:deploy && npm start"
+    "setup": "npm run build && npm run prisma:deploy && npm run import:workouts",
+    "health": "node -e \"console.log('OK')\"",
+    "prestart": "npm run build"
   },
   "keywords": [],
   "author": "",
