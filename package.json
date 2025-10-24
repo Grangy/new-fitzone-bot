@@ -5,7 +5,7 @@
     "dev": "tsx watch src/index.ts",
     "start": "node index.js",
     "prestart": "npm run build",
-    "build": "npm run prisma:generate && cp -r dist/* . && cp -r src/generated .",
+    "build": "tsc -p tsconfig.json && npm run prisma:generate && cp -r dist/* . && cp -r src/generated .",
     "postbuild": "npm run prisma:generate",
     "prisma:generate": "npx prisma generate",
     "prisma:migrate": "npx prisma migrate dev --name init",
