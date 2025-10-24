@@ -7,12 +7,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id          Int     @id @default(autoincrement())
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
   telegramId  BigInt  @unique
   username    String?
   firstName   String?
@@ -22,30 +22,30 @@ model User {
 }
 
 model Location {
-  id   Int    @id @default(autoincrement())
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
   name String @unique
   halls Hall[]
 }
 
 model Hall {
-  id         Int      @id @default(autoincrement())
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
   name       String
-  locationId Int
+  locationId String
   location   Location  @relation(fields: [locationId], references: [id])
   schedules  Schedule[]
 }
 
 model Schedule {
-  id       Int    @id @default(autoincrement())
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
   day      String
-  hallId   Int
+  hallId   String
   hall     Hall   @relation(fields: [hallId], references: [id])
   workouts Workout[]
 }
 
 model Workout {
-  id         Int      @id @default(autoincrement())
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
   name       String
-  scheduleId Int
+  scheduleId String
   schedule   Schedule @relation(fields: [scheduleId], references: [id])
 }
