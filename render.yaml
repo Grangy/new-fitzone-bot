@@ -3,8 +3,8 @@ services:
     name: fitzone-bot
     env: node
     plan: free
-    buildCommand: npm ci
-    startCommand: npm start
+    buildCommand: npm ci && npm run build
+    startCommand: node dist/index.js
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
