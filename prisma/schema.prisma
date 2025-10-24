@@ -20,3 +20,32 @@ model User {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+model Location {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  halls Hall[]
+}
+
+model Hall {
+  id         Int      @id @default(autoincrement())
+  name       String
+  locationId Int
+  location   Location  @relation(fields: [locationId], references: [id])
+  schedules  Schedule[]
+}
+
+model Schedule {
+  id       Int    @id @default(autoincrement())
+  day      String
+  hallId   Int
+  hall     Hall   @relation(fields: [hallId], references: [id])
+  workouts Workout[]
+}
+
+model Workout {
+  id         Int      @id @default(autoincrement())
+  name       String
+  scheduleId Int
+  schedule   Schedule @relation(fields: [scheduleId], references: [id])
+}
