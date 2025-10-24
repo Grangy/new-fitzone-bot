@@ -1,7 +1,6 @@
 {
   "name": "new-fitzone-bot",
   "version": "1.0.0",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
