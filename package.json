@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "node index.js",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && npm run prisma:generate && cp -r dist/* .",
     "postbuild": "npm run prisma:generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
@@ -13,7 +13,7 @@
     "import:workouts": "tsx src/scripts/import-workouts.ts",
     "setup": "npm run build && npm run prisma:deploy && npm run import:workouts",
     "health": "node -e \"console.log('OK')\"",
-    "prestart": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
