@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "node ./dist/index.js",
+    "start": "node index.js",
     "build": "tsc -p tsconfig.json",
     "postbuild": "npm run prisma:generate",
     "prisma:generate": "prisma generate",

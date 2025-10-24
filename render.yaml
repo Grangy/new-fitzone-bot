@@ -3,19 +3,8 @@ services:
     name: fitzone-bot
     env: node
     plan: free
-    buildCommand: npm ci && npm run build && ls -la dist/ && node debug-paths.js
-    startCommand: |
-      if [ -f "./dist/index.js" ]; then
-        echo "Starting with ./dist/index.js"
-        node ./dist/index.js
-      elif [ -f "dist/index.js" ]; then
-        echo "Starting with dist/index.js"
-        node dist/index.js
-      else
-        echo "ERROR: dist/index.js not found"
-        ls -la
-        exit 1
-      fi
+    buildCommand: npm ci && npm run build && cp -r dist/* . && ls -la
+    startCommand: node index.js
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
