@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: fitzone-bot
+    env: node
+    plan: free
+    buildCommand: npm ci && npm run build && npx prisma generate && npx prisma migrate deploy
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        value: file:./dev.db
+      - key: BOT_TOKEN
+        fromService:
+          type: secret
+          name: bot-token
+      - key: NODE_ENV
+        value: production
